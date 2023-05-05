@@ -24,7 +24,6 @@ class Subject(Enum):
     social_studies = 'Social Studies'
 
 
-
 class Hobby(Enum):
     sports = 'Sports'
     reading = 'Reading'
