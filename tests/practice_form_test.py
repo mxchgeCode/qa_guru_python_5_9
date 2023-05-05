@@ -2,6 +2,7 @@ from selene import have
 from demoqa_tests.pages.registration_page import RegistrationPage
 from demoqa_tests.data.users import Subject, Hobby
 
+
 def test_successful_input_registration_form():
     registration_page = RegistrationPage()
     registration_page.open()
@@ -12,7 +13,7 @@ def test_successful_input_registration_form():
     registration_page.fill_gender('Male')
     registration_page.fill_mobile('8667095677')
     registration_page.fill_date_of_birth('9', 'August', '1959')
-    registration_page.fill_subjects(Subject.chemistry.value, Subject.maths.value, Subject.physics.value )
+    registration_page.fill_subjects(Subject.chemistry.value, Subject.maths.value, Subject.physics.value)
     registration_page.fill_hobbie(Hobby.sports.value, Hobby.reading.value)
     registration_page.upload_picture('solution.png')
     registration_page.fill_address("Rodriguez side, LA 93111")
